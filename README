@@ -1,0 +1,21 @@
+NAME - program.c
+
+USAGE - 
+$ make
+$ ./server <input-string>
+$ ./client
+
+DESCRIPTION - 
+Program which creates two processess and that two processess can communicate with each other by using concept of shared memory.
+
+Example -
+# make
+gcc -o server server.c
+gcc -o client client.c
+
+# ./server "This is Shared Memory Demo."
+Shared memory created with id: 163841
+
+# ./client 
+Shared memory accessed and id is: 163841
+Shared data: This is Shared Memory Demo.
